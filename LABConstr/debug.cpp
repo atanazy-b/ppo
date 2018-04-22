@@ -3,9 +3,14 @@
 #define F_CPU 1000000
 #include <util/delay.h>
 
+Debugger::Debugger ()
+{
+	DDRB = 15;
+}
+
 void Debugger::Shine (void)
 {
-	DDRB = (1<<DDB0);
+//	DDRB = (1<<DDB0);
 	PORTB = 15;
 } 
 

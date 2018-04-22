@@ -4,6 +4,8 @@
 #include <util/delay.h>
 #include "debug.h"
 
+Debugger MyDebugger;
+
 Keyboard MyKeyboard;
 
 int main(void)
@@ -19,6 +21,7 @@ int main(void)
 	else
 	{
 		MyStepper.SetMode (0);
+		MyDebugger.Shine ();
 	}
 
 	while(1)
